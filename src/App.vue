@@ -1,28 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <brand-nav />
+    <p-carousel />
+    <content-tabs />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import BrandNav from "@/components/BrandNav";
+import PCarousel from "@/components/PCarousel";
+import ContentTabs from "@/components/ContentTabs";
 export default {
   name: "app",
-  components: {
-    HelloWorld
-  }
+  components: { BrandNav, PCarousel, ContentTabs }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
